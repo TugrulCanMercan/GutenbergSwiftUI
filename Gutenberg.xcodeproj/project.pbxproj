@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB5F6C19275CD09D001C48DE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5F6C18275CD09D001C48DE /* Auth.swift */; };
+		DB5F6C1B275CD288001C48DE /* AuthStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5F6C1A275CD288001C48DE /* AuthStatus.swift */; };
+		DB653960275B7CCA00ADE279 /* GutenbergApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65395F275B7CCA00ADE279 /* GutenbergApp.swift */; };
+		DB653962275B7CCA00ADE279 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB653961275B7CCA00ADE279 /* LoginView.swift */; };
+		DB653964275B7CCD00ADE279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB653963275B7CCD00ADE279 /* Assets.xcassets */; };
+		DB653967275B7CCD00ADE279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB653966275B7CCD00ADE279 /* Preview Assets.xcassets */; };
+		DB653971275B8F9B00ADE279 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB653970275B8F9B00ADE279 /* LoginViewModel.swift */; };
+		DB653973275B988D00ADE279 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB653972275B988D00ADE279 /* HomeView.swift */; };
+		DB653975275BB33000ADE279 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB653974275BB33000ADE279 /* SwiftUIView.swift */; };
+		DB65B130275C027500BE901C /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65B12F275C027500BE901C /* LoginRequestModel.swift */; };
+		DB65B133275C02D900BE901C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB65B132275C02D900BE901C /* Network.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB5F6C18275CD09D001C48DE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		DB5F6C1A275CD288001C48DE /* AuthStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStatus.swift; sourceTree = "<group>"; };
+		DB65395C275B7CCA00ADE279 /* Gutenberg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gutenberg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB65395F275B7CCA00ADE279 /* GutenbergApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GutenbergApp.swift; sourceTree = "<group>"; };
+		DB653961275B7CCA00ADE279 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DB653963275B7CCD00ADE279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB653966275B7CCD00ADE279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB653970275B8F9B00ADE279 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DB653972275B988D00ADE279 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DB653974275BB33000ADE279 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		DB65B12B275BEEF400BE901C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB65B12F275C027500BE901C /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		DB65B132275C02D900BE901C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB653959275B7CCA00ADE279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB653953275B7CCA00ADE279 = {
+			isa = PBXGroup;
+			children = (
+				DB65395E275B7CCA00ADE279 /* Gutenberg */,
+				DB65395D275B7CCA00ADE279 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB65395D275B7CCA00ADE279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB65395C275B7CCA00ADE279 /* Gutenberg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB65395E275B7CCA00ADE279 /* Gutenberg */ = {
+			isa = PBXGroup;
+			children = (
+				DB65B12B275BEEF400BE901C /* Info.plist */,
+				DB65B131275C02A600BE901C /* Utilities */,
+				DB65396F275B8F7600ADE279 /* Model */,
+				DB65396E275B8F6D00ADE279 /* ViewModel */,
+				DB65396D275B8F6600ADE279 /* View */,
+				DB65395F275B7CCA00ADE279 /* GutenbergApp.swift */,
+				DB5F6C18275CD09D001C48DE /* Auth.swift */,
+				DB653963275B7CCD00ADE279 /* Assets.xcassets */,
+				DB653965275B7CCD00ADE279 /* Preview Content */,
+			);
+			path = Gutenberg;
+			sourceTree = "<group>";
+		};
+		DB653965275B7CCD00ADE279 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB653966275B7CCD00ADE279 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB65396D275B8F6600ADE279 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB653961275B7CCA00ADE279 /* LoginView.swift */,
+				DB653972275B988D00ADE279 /* HomeView.swift */,
+				DB653974275BB33000ADE279 /* SwiftUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB65396E275B8F6D00ADE279 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB653970275B8F9B00ADE279 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DB65396F275B8F7600ADE279 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB65B12D275C021F00BE901C /* ResponseModels */,
+				DB65B12C275C021000BE901C /* RequestModels */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB65B12C275C021000BE901C /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB65B12F275C027500BE901C /* LoginRequestModel.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		DB65B12D275C021F00BE901C /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB5F6C1A275CD288001C48DE /* AuthStatus.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		DB65B131275C02A600BE901C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DB65B132275C02D900BE901C /* Network.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB65395B275B7CCA00ADE279 /* Gutenberg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB65396A275B7CCD00ADE279 /* Build configuration list for PBXNativeTarget "Gutenberg" */;
+			buildPhases = (
+				DB653958275B7CCA00ADE279 /* Sources */,
+				DB653959275B7CCA00ADE279 /* Frameworks */,
+				DB65395A275B7CCA00ADE279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gutenberg;
+			productName = Gutenberg;
+			productReference = DB65395C275B7CCA00ADE279 /* Gutenberg.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB653954275B7CCA00ADE279 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					DB65395B275B7CCA00ADE279 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = DB653957275B7CCA00ADE279 /* Build configuration list for PBXProject "Gutenberg" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB653953275B7CCA00ADE279;
+			productRefGroup = DB65395D275B7CCA00ADE279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB65395B275B7CCA00ADE279 /* Gutenberg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB65395A275B7CCA00ADE279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB653967275B7CCD00ADE279 /* Preview Assets.xcassets in Resources */,
+				DB653964275B7CCD00ADE279 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB653958275B7CCA00ADE279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB653962275B7CCA00ADE279 /* LoginView.swift in Sources */,
+				DB653973275B988D00ADE279 /* HomeView.swift in Sources */,
+				DB653960275B7CCA00ADE279 /* GutenbergApp.swift in Sources */,
+				DB65B130275C027500BE901C /* LoginRequestModel.swift in Sources */,
+				DB653971275B8F9B00ADE279 /* LoginViewModel.swift in Sources */,
+				DB65B133275C02D900BE901C /* Network.swift in Sources */,
+				DB5F6C19275CD09D001C48DE /* Auth.swift in Sources */,
+				DB653975275BB33000ADE279 /* SwiftUIView.swift in Sources */,
+				DB5F6C1B275CD288001C48DE /* AuthStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB653968275B7CCD00ADE279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB653969275B7CCD00ADE279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB65396B275B7CCD00ADE279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gutenberg/Preview Content\"";
+				DEVELOPMENT_TEAM = J2USCCWW7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gutenberg/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tugrulcan.Gutenberg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DB65396C275B7CCD00ADE279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gutenberg/Preview Content\"";
+				DEVELOPMENT_TEAM = J2USCCWW7B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gutenberg/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tugrulcan.Gutenberg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB653957275B7CCA00ADE279 /* Build configuration list for PBXProject "Gutenberg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB653968275B7CCD00ADE279 /* Debug */,
+				DB653969275B7CCD00ADE279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB65396A275B7CCD00ADE279 /* Build configuration list for PBXNativeTarget "Gutenberg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB65396B275B7CCD00ADE279 /* Debug */,
+				DB65396C275B7CCD00ADE279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB653954275B7CCA00ADE279 /* Project object */;
+}
