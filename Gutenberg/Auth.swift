@@ -17,7 +17,7 @@ class Auth : ObservableObject{
     
     func userAuthCheck(){
         //token check fake api yarat
-        NetworkManager.sharedInstance.post(endpointUrl: "localhost:8000/tokenCheck", params: ["token":UserDefaults.standard.string(forKey: "token")])
+        NetworkManager.sharedInstance.post(endpointUrl: "http:localhost:4000/tokenCheck", params: ["token":UserDefaults.standard.string(forKey: "token")])
             .receive(on: DispatchQueue.main)
             .decode(type: AuthStatus.self, decoder: JSONDecoder())
             .tryMap({ AuthStatus ->Bool in

@@ -13,11 +13,11 @@ struct GutenbergApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if(auth.authStatus){
+//            if(auth.authStatus){
                 HomeView()
-            }else{
-                LoginView()
-            }
+//            }else{
+//                LoginView()
+//            }
         }
     }
 }

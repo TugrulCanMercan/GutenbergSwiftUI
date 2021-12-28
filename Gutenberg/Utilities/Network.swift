@@ -26,6 +26,22 @@ class NetworkManager {
         // Only methods within the class can access here
     }
     
+    func getRequest(endPointUrl:String)->AnyPublisher<Data,Error>{
+        let url = URL(string: endPointUrl)
+        guard let url = url else {
+            return AnyPublisher(Fail<Data,Error>(error: URLError(.badURL)))
+        }
+
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .tryMap({ (data: Data, response: URLResponse) in
+                guard let response = response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode < 300 else{
+                    throw URLError(.badServerResponse)
+                }
+                return data
+            })
+            .eraseToAnyPublisher()
+    }
+    
     
     func post<T:Codable>(endpointUrl:String,params:T) ->AnyPublisher<Data,Error>{
         //        let jsonType = try JSONSerialization.jsonObject(with: params, options: [])

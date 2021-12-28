@@ -22,7 +22,7 @@ class LoginViewModel:ObservableObject{
     }
     
     func login(){
-        NetworkManager.sharedInstance.post(endpointUrl: "http:localhost:8000/loginToken", params: getTokenReq(user: User(username: "tugrul",password: "mercan")))
+        NetworkManager.sharedInstance.post(endpointUrl: "http:localhost:4000/loginToken", params: getTokenReq(user: User(username: "tugrul",password: "mercan")))
             .receive(on: DispatchQueue.main)
             .map({ data ->String in
                 let str = String(data: data, encoding: .utf8)!
